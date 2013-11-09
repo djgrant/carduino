@@ -233,12 +233,24 @@ img {
   max-width: 100%;
 }
 
+.pull-right {
+  float: right;
+}
+
+.block {
+  display: block;
+}
+
 body {
   font-family: "calluna", sans-serif;
+  font-size: 18px;
+}
+
+h1, h2 {
+  font-family: "museo-slab", sans-serif;
 }
 
 h1 {
-  font-family: "museo-slab", sans-serif;
   font-size: 40px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -246,10 +258,8 @@ h1 {
 }
 
 h2 {
-  font-family: "adelle-sans", sans-serif;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 300;
-  text-transform: uppercase;
   color: #888888;
   margin: 0;
   letter-spacing: 1px;
@@ -345,13 +355,38 @@ a.Button {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 80;
-  background: white;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
+  z-index: -1;
+  visibility: hidden;
+  overflow: auto;
+  background: #9df18c;
+  -webkit-font-smoothing: antialiased;
+  transform: translateY(100%) translateZ(0);
+  transition: transform 0.3s ease-in-out, z-index 0 0.3s, visibility 0 0.3s;
 }
 .Modal.is-open {
-  transform: translateY(0);
+  visibility: visible;
+  z-index: 80;
+  transform: translateY(0) translateZ(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Modal-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 2px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #444444;
+  border: 1px solid #555555;
+  border-radius: 100px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+.Modal-close:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 html,
@@ -390,4 +425,57 @@ body {
   margin: 0 auto;
   left: 50%;
   margin-left: -100px;
+}
+
+.createCard .tab {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 5px solid white;
+}
+.createCard .control-group {
+  margin-bottom: 20px;
+}
+.createCard .control-group label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  padding-right: 10px;
+}
+.createCard .control-group label:after {
+  content: ":";
+}
+.createCard .control-group .tip {
+  display: block;
+  margin-left: 155px;
+  font-size: 13px;
+}
+.createCard h2 {
+  color: #c23a9e;
+}
+.createCard h3 {
+  color: #111111;
+}
+.createCard hr {
+  border: none;
+  border-top: 1px dotted #2c9d15;
+}
+
+.createCard-header {
+  padding: 30px 0;
+  text-align: center;
+}
+.createCard-header input[type="text"] {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #d533aa;
+  margin-top: 35px;
+}
+.createCard-header input[type="text"]:focus {
+  outline: none;
+}
+
+.createCard-submit {
+  text-align: center;
+  padding-bottom: 30px;
 }

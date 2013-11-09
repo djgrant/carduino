@@ -4,10 +4,37 @@
   left: 0
   right: 0
   bottom: 0
-  z-index: 80
-  background: white
-  transform: translateY(100%)
-  transition: transform 0.3s ease
+  z-index: -1
+  visibility: hidden
+  overflow: auto
+  background: $color-bg-green
+  // background: url(http://www.harrisandhoole.co.uk/images/HarrisAndHoole_Blackboard_Dark.jpg)
+  // background-size: cover
+  // color: #eee
+  -webkit-font-smoothing: antialiased
+  transform: translateY(100%) translateZ(0)
+  transition: transform 0.3s ease-in-out, z-index 0 0.3s, visibility 0 0.3s
 
   &.is-open
-    transform: translateY(0)
+    visibility: visible
+    z-index: 80
+    transform: translateY(0) translateZ(0)
+    transition: transform 0.3s ease-in-out
+
+.Modal-close
+  position: absolute
+  right: 15px
+  top: 10px
+  width: 30px
+  height: 30px
+  padding: 2px 0
+  text-align: center
+  text-decoration: none
+  color: #444
+  border: 1px solid #555
+  border-radius: 100px
+  -webkit-font-smoothing: antialiased
+  font-size: 18px
+
+  &:hover
+    background: rgba(#fff, 0.3)

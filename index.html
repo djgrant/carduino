@@ -27,7 +27,65 @@
   </div>
 
   <div class="Modal Modal--fullscreen" id="modal-createCard">
-
+    <a href="#" class="Modal-close">×</a>
+    <form class="createCard container" id="form-createCard">
+      <div class="createCard-header">
+        <h2>Let's create a gift card for...</h2>
+        <div class="control-group">
+          <input type="text" placeholder="Name...">
+        </div>
+      </div>
+      <div class="tabs">
+        <div class="tab">
+          <h3>Part one. The money.</h3>
+          <p><em>Add some money to the card that can be redeemed at one of our fabulous shops.</em></p>
+          <div class="control-group">
+            <label>Gift Value</label>
+            <input type="text" value="£15">
+          </div>
+          <div class="control-group">
+            <label>Retailer</label>
+            <select>
+              <option>Marks &amp; Spencers</option>
+              <option>Pizza Express</option>
+            </select>
+          </div>
+        </div>
+        <div class="tab">
+          <h3>Part two. The after gift experience</h3>
+          <p><em>Here's where it get's fun! Once <span class="friend">your friend</span> has spent the card, send them on a tailored experience!</em></p>
+          <div class="control-group">
+            <select>
+              <option>A personalised coffee at Harris + Hoole</option>
+            </select>
+          </div>
+            <hr>
+          <div class="control-group">
+            <label>Phone number</label>
+            <input type="text">
+            <span class="tip">We'll send <span class="friend">your friend</span> a text to see if they are ready for their suprise adventure</span>
+          </div>
+          <div class="control-group">
+            <label>Favourite Track</label>
+            <input type="text">
+            <span class="tip">When they arrive at the coffee shop a barrista will play their favourite tune. How cool is that?!</span>
+          </div>
+          <div class="control-group">
+            <label>Occassion</label>
+            <input type="text">
+            <span class="tip">If possible we'd like someone to congratulate <span class="friend">your friend</span></span>
+          </div>
+          <div class="control-group">
+            <label>Photo</label>
+            <input type="file">
+            <span class="tip">Help us to see them coming</span>
+          </div>
+          <!-- <a class="block" href="#">Cancel</a> -->
+        </div>
+        <div class="createCard-submit">
+          <button class="Button" type="submit">Create</button>
+        </div>
+    </form>
   </div>
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
