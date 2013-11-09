@@ -260,6 +260,7 @@ a {
 }
 
 .logo {
+  display: block;
   color: white;
   font-family: "museo-slab";
   font-size: 32px;
@@ -282,6 +283,10 @@ a {
   background: #9df18c;
   transform: rotate(-4deg) translateY(6px);
   transform-origin: 0% 90%;
+  transition: 0.12s ease;
+}
+.logo:hover:before {
+  transform: rotate(-6deg) translateY(6px);
 }
 .logo:after {
   background: #dc55b8;

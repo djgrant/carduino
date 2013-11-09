@@ -1,4 +1,5 @@
 .logo
+  display: block
   color: white
   font-family: "museo-slab"
   font-size: 32px
@@ -20,9 +21,12 @@
   &:before
     height: 100px
     background: $color-bg-green
-    // animation: logo 0.3s 0.3s ease forwards
     transform: rotate(-4deg) translateY(6px)
     transform-origin: 0% 90%
+    transition: 0.12s ease
+
+  &:hover:before
+    transform: rotate(-6deg) translateY(6px)
 
   &:after
     background: $color-bg-pink
@@ -35,7 +39,3 @@
     text-align: center
     z-index: 1
     text-transform: lowercase
-
-// @keyframes logo
-//   to
-
