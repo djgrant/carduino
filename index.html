@@ -41,7 +41,7 @@
           <p><em>Add some money to the card that can be redeemed at one of our fabulous shops.</em></p>
           <div class="control-group">
             <label>Gift Value</label>
-            <input type="text" value="£15">
+            <input type="text" value="15">
           </div>
           <div class="control-group">
             <label>Retailer</label>
@@ -53,39 +53,45 @@
         </div>
         <div class="tab">
           <h3>Part two. The after gift experience</h3>
-          <p><em>Here's where it get's fun! Once <span class="friend">your friend</span> has spent the card, send them on a tailored experience!</em></p>
+          <p><em>Here's where it get's fun! Once <span class="friend">your friend</span> has spent the card, we'll send them a tailored experience!</em></p>
           <div class="control-group">
             <select>
               <option>A personalised coffee at Harris + Hoole</option>
             </select>
           </div>
-            <hr>
-          <div class="control-group">
-            <label>Phone number</label>
-            <input type="text">
-            <span class="tip">We'll send <span class="friend">your friend</span> a text to see if they are ready for their suprise adventure</span>
+          <hr>
+          <!-- <p><em>To make it extra special we need a few details about <span class="friend">your friend</span>.</em></p> -->
+          <div class="createCard-profile">
+            <div class="createCard-profile-photo">
+              <label class="hidden-visually">Photo</label>
+              <input type="file">
+              <span class="tip">Help us to see them coming</span>
+            </div>
+            <div class="createCard-profile-details">
+              <div class="control-group">
+                <label>Phone number</label>
+                <input type="text">
+                <span class="tip">We'll send <span class="friend">your friend</span> a text to see if they are ready for their suprise adventure</span>
+              </div>
+              <div class="control-group">
+                <label>Favourite Track</label>
+                <input type="text">
+                <span class="tip">When they arrive at the coffee shop a barrista will play their favourite tune.</span>
+              </div>
+              <div class="control-group">
+                <label>Occassion</label>
+                <input type="text">
+                <span class="tip">And congratulate them on their special day!</span>
+              </div>
+            </div>
           </div>
-          <div class="control-group">
-            <label>Favourite Track</label>
-            <input type="text">
-            <span class="tip">When they arrive at the coffee shop a barrista will play their favourite tune. How cool is that?!</span>
-          </div>
-          <div class="control-group">
-            <label>Occassion</label>
-            <input type="text">
-            <span class="tip">If possible we'd like someone to congratulate <span class="friend">your friend</span></span>
-          </div>
-          <div class="control-group">
-            <label>Photo</label>
-            <input type="file">
-            <span class="tip">Help us to see them coming</span>
-          </div>
-          <!-- <a class="block" href="#">Cancel</a> -->
         </div>
         <div class="createCard-submit">
           <button class="Button" type="submit">Create</button>
         </div>
     </form>
+    <!-- <div class="logo logo--small"><span>Carduino</span></div> -->
+
   </div>
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>

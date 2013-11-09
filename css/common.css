@@ -241,6 +241,10 @@ img {
   display: block;
 }
 
+.hidden-visually {
+  visibility: hidden;
+}
+
 body {
   font-family: "calluna", sans-serif;
   font-size: 18px;
@@ -311,6 +315,17 @@ a {
   text-transform: lowercase;
 }
 
+.logo--small {
+  font-size: 26px;
+}
+.logo--small, .logo--small:before, .logo--small:after {
+  width: 125px;
+  height: 75px;
+}
+.logo--small span {
+  line-height: 75px;
+}
+
 .Button {
   height: 40px;
   padding: 0 20px;
@@ -371,9 +386,9 @@ a.Button {
 }
 
 .Modal-close {
-  position: absolute;
-  right: 15px;
-  top: 10px;
+  position: fixed;
+  right: 13px;
+  top: 15px;
   width: 30px;
   height: 30px;
   padding: 2px 0;
@@ -458,7 +473,8 @@ body {
 }
 .createCard hr {
   border: none;
-  border-top: 1px dotted #2c9d15;
+  border-top: 1px solid #97eb86;
+  margin: 30px 0;
 }
 
 .createCard-header {
@@ -473,6 +489,24 @@ body {
 }
 .createCard-header input[type="text"]:focus {
   outline: none;
+}
+
+.createCard-profile:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.createCard-profile-photo {
+  float: right;
+  width: 200px;
+  background: white;
+  border: 1px solid #cccccc;
+}
+
+.createCard-profile-details {
+  float: left;
+  width: 500px;
 }
 
 .createCard-submit {
