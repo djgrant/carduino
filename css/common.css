@@ -1,0 +1,373 @@
+/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+body {
+  margin: 0;
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "calluna", sans-serif;
+}
+
+h1 {
+  font-family: "museo-slab", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  font-family: "adelle-sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #888888;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #1f77b5;
+}
+
+.logo {
+  color: white;
+  font-family: "museo-slab";
+  font-size: 32px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+.logo, .logo:before, .logo:after {
+  width: 175px;
+  height: 100px;
+  border-radius: 10px;
+}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo:before {
+  height: 100px;
+  background: #9df18c;
+  transform: rotate(-4deg) translateY(6px);
+  transform-origin: 0% 90%;
+}
+.logo:after {
+  background: #dc55b8;
+}
+.logo span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+  z-index: 1;
+  text-transform: lowercase;
+}
+
+.Button {
+  height: 40px;
+  padding: 0 20px;
+  background: white;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  -webkit-font-smoothing: antialiased;
+  color: #666666;
+  transition: background 0.2s;
+}
+.Button:hover {
+  background: #f9f9f9;
+}
+.Button:active {
+  background: #e1e1e1;
+}
+.Button:focus {
+  outline: none;
+}
+
+a.Button {
+  line-height: 40px;
+}
+
+.Button--primary {
+  height: 50px;
+  font-size: 20px;
+  padding: 0 30px;
+  background: white;
+  border: 2px solid #97eb86;
+  color: #c23a9e;
+}
+
+.Button--seamless {
+  border: none;
+  background: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 0 auto;
+  top: 60px;
+}
+
+.hero {
+  display: table;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.calldown {
+  position: absolute;
+  bottom: 50px;
+  width: 200px;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -100px;
+}

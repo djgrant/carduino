@@ -1,0 +1,41 @@
+.logo
+  color: white
+  font-family: "museo-slab"
+  font-size: 32px
+  -webkit-font-smoothing: antialiased
+  text-align: center
+
+  &, &:before, &:after
+    width: 175px
+    height: 100px
+    border-radius: 10px
+
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+
+  &:before
+    height: 100px
+    background: $color-bg-green
+    // animation: logo 0.3s 0.3s ease forwards
+    transform: rotate(-4deg) translateY(6px)
+    transform-origin: 0% 90%
+
+  &:after
+    background: $color-bg-pink
+
+  span
+    position: absolute
+    left: 0
+    width: 100%
+    line-height: 100px
+    text-align: center
+    z-index: 1
+    text-transform: lowercase
+
+// @keyframes logo
+//   to
+
