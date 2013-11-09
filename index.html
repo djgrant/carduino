@@ -32,7 +32,7 @@
       <div class="createCard-header">
         <h2>Let's create a gift card for...</h2>
         <div class="control-group">
-          <input type="text" placeholder="Name...">
+          <input type="text" name="name" placeholder="Name...">
         </div>
       </div>
       <div class="tabs">
@@ -41,7 +41,7 @@
           <p><em>Add some money to the card that can be redeemed at one of our fabulous shops.</em></p>
           <div class="control-group">
             <label>Gift Value</label>
-            <input type="text" value="15">
+            <input type="text" name="value">
           </div>
           <div class="control-group">
             <label>Retailer</label>
@@ -64,29 +64,30 @@
           <div class="createCard-profile">
             <div class="createCard-profile-photo">
               <label class="hidden-visually">Photo</label>
-              <input type="file">
+              <input type="file" name="photo">
               <span class="tip">Help us to see them coming</span>
             </div>
             <div class="createCard-profile-details">
               <div class="control-group">
                 <label>Phone number</label>
-                <input type="text">
+                <input type="text" name="phone">
                 <span class="tip">We'll send <span class="friend">your friend</span> a text to see if they are ready for their suprise adventure</span>
               </div>
               <div class="control-group">
                 <label>Favourite Track</label>
-                <input type="text">
+                <input type="text" name="track">
                 <span class="tip">When they arrive at the coffee shop a barrista will play their favourite tune.</span>
               </div>
               <div class="control-group">
                 <label>Occassion</label>
-                <input type="text">
+                <input type="text" name="occassion">
                 <span class="tip">And congratulate them on their special day!</span>
               </div>
             </div>
           </div>
         </div>
         <div class="createCard-submit">
+          <input type="hidden" value="1231293012983">
           <button class="Button" type="submit">Create</button>
         </div>
     </form>

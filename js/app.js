@@ -5,6 +5,14 @@ $('#action-createCard').on('click', function() {
 });
 
 $('#form-createCard').on('submit', function(event) {
+  var form = $(this);
   event.preventDefault();
-  console.log( $('#form-createCard').serialize() );
+  $.ajax({
+    url: 'http://carduino.herokuapp.com/experiences',
+    type: 'POST',
+    data: form.serialize(),
+    success: function() {
+      $('.createCard-submit button').text('Done!');
+    }
+  });
 });
