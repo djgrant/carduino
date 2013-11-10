@@ -41,7 +41,7 @@
           <p><em>Add some money to the card that can be redeemed at one of our fabulous shops.</em></p>
           <div class="control-group">
             <label>Gift Value</label>
-            <input type="text" name="value">
+            <input type="text">
           </div>
           <div class="control-group">
             <label>Retailer</label>
@@ -63,9 +63,12 @@
           <!-- <p><em>To make it extra special we need a few details about <span class="friend">your friend</span>.</em></p> -->
           <div class="createCard-profile">
             <div class="createCard-profile-photo">
+              <output class="preview" id="preview"></output>
               <label class="hidden-visually">Photo</label>
-              <input type="file" name="photo">
-              <span class="tip">Help us to see them coming</span>
+              <button class="Button Button--small" id="button-upload-photo">Upload</button>
+              <input type="file" class="" id="input-photo" style="position: absolute; top: -9999px" />
+              <input type="hidden" name="photo">
+              <!-- <span class="tip">Help us to see them coming</span> -->
             </div>
             <div class="createCard-profile-details">
               <div class="control-group">
@@ -87,7 +90,8 @@
           </div>
         </div>
         <div class="createCard-submit">
-          <input type="hidden" value="1231293012983">
+          <input type="hidden" name="cardId" value="1231293012983">
+          <input type="hidden" name="test" value="1231293012983">
           <button class="Button" type="submit">Create</button>
         </div>
     </form>

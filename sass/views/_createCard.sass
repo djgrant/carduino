@@ -1,0 +1,87 @@
+.createCard
+
+  .tab
+    padding: 10px 20px
+    margin-bottom: 20px
+    background: rgba(#fff, 0.6)
+    border: 5px solid #fff
+
+  .control-group
+    margin-bottom: 20px
+
+    label
+      display: inline-block
+      width: 150px
+      text-align: right
+      padding-right: 10px
+
+      &:after
+        content: ':'
+
+    .tip
+      display: block
+      margin-left: 155px
+      font-size: 13px
+
+  h2
+    color: $color-text-pink
+
+  h3
+    color: #111
+
+  hr
+    border: none
+    border-top: 1px solid $color-border-green
+    margin: 30px 0
+
+.createCard-header
+  padding: 30px 0
+  text-align: center
+
+  input[type="text"]
+    background: none
+    border: none
+    border-bottom: 1px solid darken($color-bg-pink, 8)
+    margin-top: 35px
+
+    &:focus
+      outline: none
+
+
+.createCard-profile:after
+  content: ''
+  display: table
+  clear: both
+
+.createCard-profile-photo
+  float: right
+  width: 150px
+
+  .preview
+    display: block
+    height: 150px
+    background: white
+    background-image: inline-image('avatar.jpg')
+    border: 1px solid #ccc
+
+    span
+      display: block
+      overflow: hidden
+
+    img
+      min-width: 100%
+      max-width: none
+      min-height: 100%
+      max-height: 100%
+
+  .Button
+    display: block
+    width: 100%
+
+.createCard-profile-details
+  float: left
+  width: 500px
+
+.createCard-submit
+  text-align: center
+  padding-bottom: 30px
