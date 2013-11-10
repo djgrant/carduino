@@ -11,7 +11,8 @@
   };
 
   var config = {
-    apiUrl: 'http://carduino.herokuapp.com/experiences'
+    apiUrl: 'http://carduino.herokuapp.com/experiences',
+    stickyStreetApiUrl: 'https://api.clienttoolbox.com/api.php'
   };
 
   var helpers = {
@@ -37,6 +38,29 @@
         formSending(function() {
           formDone(formClose);
         });
+      }
+    });
+    var name = $(els.formCreateCard).find('[name="name"]').val();
+    var phone = $(els.formCreateCard).find('[name="phone"]').val();
+    var coffee = $(els.formCreateCard).find('[name="coffee"]').val();
+    var track = $(els.formCreateCard).find('[name="track"]').val();
+    var card_number = $(els.formCreateCard).find('[name="card_number"]').val();
+    $.ajax({
+      url: config.stickyStreetApiUrl,
+      type: 'GET',
+      data: {
+        user_id: 'birdback',
+        user_password: '7c4a8d09ca3762af61e59520943dc26494f8941b',
+        type: 'record_customer',
+        customer_action: 'new',
+        campaign_id: '7333593371419969',
+        account_id: 'birdback',
+        code: '89838',
+        phone: phone,
+        first_name: name,
+        custom_field_1: coffee,
+        custom_field_2: track,
+        card_number: card_number
       }
     });
   });
