@@ -55,28 +55,29 @@
         customer_action: 'new',
         campaign_id: '7333593371419969',
         account_id: 'birdback',
-        code: '89838',
+        code: '89830',
         phone: phone,
         first_name: name,
         custom_field_1: coffee,
         custom_field_2: track,
-        card_number: card_number
+        card_number: card_number,
+        auto_add: 100
       }
     });
   });
 
   function formSending(callback) {
-    els.submitCreateCard.text('Sending card...');
+    els.submitCreateCard.text('Registering card...');
     setTimeout(function() {
       callback();
     }, 1250);
   }
 
   function formDone(callback) {
-    els.submitCreateCard.text('Done!');
+    els.submitCreateCard.text('Card dispatched!');
     setTimeout(function() {
       callback();
-    }, 850);
+    }, 1500);
   }
 
   function formClose(callback) {
@@ -147,6 +148,8 @@
     }
   }
 
-
+  $('#experiences').change(function() {
+    $('#createCard-profile').slideDown();
+  });
 
 })();

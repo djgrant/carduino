@@ -30,17 +30,18 @@
     <a href="#" class="Modal-close">×</a>
     <form class="createCard container" id="form-createCard">
       <div class="createCard-header">
-        <h2>Let's create a gift card for...</h2>
-        <div class="control-group">
-          <input type="text" name="name" placeholder="Name...">
-        </div>
+        <h2>Make your personalised gift card</h2>
       </div>
       <div class="tabs">
         <div class="tab">
-          <h3>Part one. The money.</h3>
-          <p><em>Add some money to the card that can be redeemed at one of our fabulous shops.</em></p>
+          <h3>Part one. The gift card.</h3>
+          <!-- <p><em>Add some money to the card that can be redeemed at one of our fabulous shops.</em></p> -->
           <div class="control-group">
-            <label>Gift Value</label>
+            <label>Recepient name</label>
+            <input type="text" name="name" placeholder="Rachel">
+          </div>
+          <div class="control-group">
+            <label>Gift Value (&pound;)</label>
             <input type="text">
           </div>
           <div class="control-group">
@@ -55,13 +56,15 @@
           <h3>Part two. The after gift experience</h3>
           <p><em>Here's where it get's fun! Once <span class="friend">your friend</span> has spent the card, we'll send them a tailored experience!</em></p>
           <div class="control-group">
-            <select>
+            <select id="experiences">
+              <option>Choose one great experience...</option>
               <option>A personalised coffee at Harris + Hoole</option>
+              <option>A glass of wine at Gordon's</option>
             </select>
           </div>
           <hr>
           <!-- <p><em>To make it extra special we need a few details about <span class="friend">your friend</span>.</em></p> -->
-          <div class="createCard-profile">
+          <div class="createCard-profile" id="createCard-profile" hidden>
             <div class="createCard-profile-photo">
               <output class="preview" id="preview"></output>
               <label class="hidden-visually">Photo</label>
@@ -93,11 +96,14 @@
             </div>
           </div>
         </div>
-        <div class="createCard-submit">
-          <input type="hidden" name="cardId" value="1231293012983">
-          <input type="hidden" name="card_number" value="44551261298612396">
-          <button class="Button" type="submit">Create</button>
+        <div class="tab">
+          <div class="createCard-submit">
+            <input type="hidden" name="cardId" value="1231293012983">
+            <input type="hidden" name="card_number" value="44551261298612396">
+            <button class="Button Button--bright" type="submit">Send Cardiuno Card</button>
+          </div>
         </div>
+
     </form>
     <!-- <div class="logo logo--small"><span>Carduino</span></div> -->
 

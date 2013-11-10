@@ -35,3 +35,15 @@ a.Button
 .Button--small
   font-size: 13px
   height: 30px
+
+.Button--bright
+  background: $color-bg-pink
+  border: 1px solid darken($color-bg-pink, 20)
+  color: white
+  top: 15px
+
+  &:hover
+    background: darken($color-bg-pink, 10)
+
+  &:active
+    background: darken($color-bg-pink, 20)
